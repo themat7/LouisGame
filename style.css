@@ -1,0 +1,85 @@
+.top{
+background-color: red;
+}
+.top ul{
+	list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top ul li{
+	padding: 5px;
+	text-align: center;
+	width: 50%;
+}
+/* li+li selects every list item except the first one */
+
+.top ul li + li {}
+/* our screen is bigger */
+
+@media screen and (min-width: 500px) {
+    .top ul {
+        flex-wrap: nowrap;
+    }
+    .top ul li {
+        width: auto;
+        /* reset the width from earlier */
+        
+        flex: 1;
+        /* make each box take up the same amount of space */
+    }
+}
+/* STANDARD SETUP */
+
+.center{
+padding: 10px;
+	text-align:center;
+
+}
+.bottom{
+	text-align:center;
+	background-color: blue;
+	padding: 3px;
+}
+.bottom ul{
+	list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bottom ul li{
+	padding: 5px;
+	text-align: center;
+	width: 50%;
+}
+/* li+li selects every list item except the first one */
+
+.bottom ul li + li {}
+/* our screen is bigger */
+
+@media screen and (min-width: 500px) {
+    .bottom ul {
+        flex-wrap: nowrap;
+    }
+    .bottom ul li {
+        width: auto;
+        /* reset the width from earlier */
+        
+        flex: 1;
+        /* make each box take up the same amount of space */
+    }
+}
+
+
+
+body,
+p,
+h1,
+li,
+ul
+ {
+    padding: 0px;
+    margin: 0px;
+}
